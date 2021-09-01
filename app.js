@@ -96,11 +96,3 @@ form.addEventListener('submit', (event) => {
 		event.preventDefault();
 	}
 });
-
-window.addEventListener('load', function () {
-	form.addEventListener('change', function () {
-		if (form.dateBirth.value) {
-			age.placeholder = calculateAge(form.dateBirth.value);
-		}
-	});
-});
