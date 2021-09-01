@@ -1,0 +1,76 @@
+* {
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+
+form {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+form input {
+	width: 90%;
+	height: 28px;
+	margin: 0.5rem;
+}
+
+form button {
+	padding: 0.5em 1em;
+	border: none;
+	background: rgb(100, 200, 255);
+	cursor: pointer;
+}
+
+#message {
+	width: 90%;
+	height: 100px;
+	margin: 0.5rem;
+}
+
+.form__inputErrorName {
+	margin-bottom: 0;
+	display: none;
+}
+.form__inputErrorNameOn {
+	display: block;
+}
+
+.form__inputErrorLastName {
+	margin-bottom: 0;
+	display: none;
+}
+.form__inputErrorLastNameOn {
+	display: block;
+}
+
+.form__inputErrorEmail {
+	margin-bottom: 0;
+	display: none;
+}
+.form__inputErrorEmailOn {
+	display: block;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
+
+textarea {
+	resize: none;
+}

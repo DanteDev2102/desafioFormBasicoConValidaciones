@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form Culero</title>
+		<meta charset="utf-8"></meta>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<form class="form" name="form" id="form">
+			<label for="name" class="form__name">Nombre</label>
+			<br />
+			<input class="form__input" type="text" id="name" />
+			<p class="form__inputErrorName">
+				Nombre invalido
+			</p>
+			<br />
+			<br />
+			<label for="lastName" class="form__name">Apellido</label>
+			<br />
+			<input class="form__input" type="text" id="lastName" />
+			<p class="form__inputErrorLastName">
+				Apellido invalido.
+			</p>
+			<br />
+			<br />
+			<label for="email" class="form__name">Email</label>
+			<br />
+			<input class="form__input" type="email" id="email" />
+			<p class="form__inputErrorEmail">
+				Email invalido.
+			</p>
+			<br />
+			<br />
+			<label for="dateBirth" class="form__dateBirth" id="dateBirth">Fecha de nacimiento</label>
+			<br />
+			<input class="form__input" type="date" id="dateBirth" placeholder=""/>
+			<br />
+			<br />
+			<label class="form__name">Edad</label>
+			<br />
+			<input class="form__output" id="age" placeholder="" disabled="disableAge()"/></input>
+			<br />
+			<br />
+			<label for="message" class="form__name" maxlength="10">Mensaje</label>
+			<br />
+			<textarea
+				type="text"
+				class="form__input"
+				id="message"
+				max="55"
+			></textarea>
+			<br />
+			<br />
+			<button class="form__submit" type="submit" id="submit">submit</button>
+		</form>
+		<script src="app.js"></script>
+	</body>
+</html>
