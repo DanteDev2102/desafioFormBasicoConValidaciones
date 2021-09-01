@@ -35,7 +35,11 @@ const calculateAge = (dateBirth) => {
 		}
 	}
 	boolean.Date = true;
-	return 100 > age > 0 ? age : 'Ingrese una fecha valida';
+	if (age > 0 && age < 100) {
+		return age;
+	} else {
+		return 'Ingrese una fecha valida';
+	}
 };
 
 const condition = (regul, input, val) => {
